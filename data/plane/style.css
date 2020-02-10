@@ -1,0 +1,87 @@
+/* 设置body 主体为浮动 */
+body {
+    color: white;
+    background-color:#292929;
+    margin: 0;
+}
+article {
+    display: none
+}
+section {
+    display: flex;
+}
+
+/* 设置第1个div样式 */
+section div:nth-child(1) {
+    margin: 0 auto 0 30px;
+}
+section>div h2 {
+    text-align: center;
+}
+li {
+    margin: 2px;
+}
+
+/* 设置第2个div样式 */
+#stage {
+    width: 480px;
+    text-align: center;
+    vertical-align: middle;
+}
+#canvas {
+    border: 2px solid #916dd5;
+}
+
+/* 设置第3个div样式 */
+section div:nth-child(3) {
+    margin: 0 30px 0 auto
+}
+#d3-1 {
+    padding: 6px;
+    width: 100%; 
+    height: 265px; 
+    background-color:rgba(71, 71, 71, 0.568); 
+    box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.301); 
+}
+#d3-1>h3 {
+    margin: 4px;
+    text-align: center;
+}
+#d3>a>img {
+    width: 150px;
+}
+#d3-2 {
+    margin: 0;
+    width: 100%; 
+    height: 40px; 
+    background-color:rgba(71, 71, 71, 0.568); 
+    box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.301); 
+}
+#d3-2 h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-align: center;
+    color:black;
+}
+
+/* 页面小于1100px发生该样式 */
+@media screen and (max-width: 1100px) {
+    article {
+        display: block
+    }
+    section {
+        display: none
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    article {
+        padding-top: 200px;
+    }
+    h1 {
+        margin: 0;
+        padding-bottom: 7px;
+        text-align: center;
+    }
+}
